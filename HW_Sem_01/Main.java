@@ -24,5 +24,10 @@ public class Main {
             System.out.println(product);
         }
 
+        HotDrinkVendingMachine hMachine = new HotDrinkVendingMachine();
+        hMachine.initProduct(productList);
+        System.out.println();
+        System.out.println(hMachine.getProduct("Какао"));
+        System.out.println(hMachine.geProduct("Кофе", 100, 75));
     }
 }
